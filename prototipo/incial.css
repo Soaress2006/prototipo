@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ffcccc, #ffffff); /* Gradiente de vermelho claro até branco */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.content {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto; /* Permite rolagem horizontal se necessário */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap; /* Mantém os botões em uma linha */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: #b30000; /* Cor vermelha dos botões */
+    padding: 20px 40px;
+    border-radius: 10px;
+    display: block;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #800000; /* Tom de vermelho mais escuro ao passar o mouse */
+    transform: scale(1.1); /* Efeito de aumentar o botão ao passar o mouse */
+}
+
+/* Texto abaixo dos botões */
+.info-text {
+    margin-top: 20px;
+}
+
+.info-text p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Rodapé */
+.footer {
+    width: 100%;
+    background-color: #b30000; /* Fundo vermelho no rodapé */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
